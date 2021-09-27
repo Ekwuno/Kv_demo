@@ -1,0 +1,10 @@
+account_id = "c49b2a4a08c9dd362d434786702bd579"
+name = "kv_demo"
+route = ""
+type = "javascript"
+workers_dev = true
+zone_id = ""
+
+kv_namespaces = [
+  {binding = "MY_KV", id = "144835d570124811aca67d79b94f2f56"},
+]
