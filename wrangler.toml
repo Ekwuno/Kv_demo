@@ -6,5 +6,5 @@ workers_dev = true
 zone_id = ""
 
 kv_namespaces = [
-  {binding = "MY_KV", id = "144835d570124811aca67d79b94f2f56"},
+  { binding = "MY_KV", preview_id = "e7d6ce291255412c98dfa75e9ecf4862", id = "144835d570124811aca67d79b94f2f56" }
 ]

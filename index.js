@@ -1,12 +1,12 @@
-addEventListener('fetch', event => {
+addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request))
 })
-/**
- * Respond with hello worker text
- * @param {Request} request
- */
+
 async function handleRequest(request) {
-  return new Response('Hello worker!', {
-    headers: { 'content-type': 'text/plain' },
-  })
+  const value = await MY_KV.get("1")
+  if (value === null) {
+    return new Response("Value not found", {status: 404})
+  }
+
+  return new Response(value)
 }
